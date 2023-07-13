@@ -14,7 +14,7 @@ body {
 }
 
 .productCard {
-    max-width: 540px;
+    max-width: 575px;
     display: flex;
     flex-direction: row;
 }
