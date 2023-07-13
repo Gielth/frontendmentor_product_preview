@@ -1,0 +1,36 @@
+@media screen and (max-width: 375px) {
+    body {
+        height: auto;
+    }
+
+    .productCard {
+        flex-direction: column;
+        margin: 1rem;
+        height: auto;
+    }
+
+    .productCard .product {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+
+    .productCard .product .productName {
+        padding: 1rem 0;
+    }
+
+    .productCard .product .productDescription {
+        padding-bottom: 1rem;
+    }
+
+    .productCard .product .productPrice {
+        padding-bottom: 1rem;
+    }
+
+    .productCard .productImage img {
+        content: url(./images/image-product-mobile.jpg);
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        border-bottom-left-radius: 0;
+    }
+}

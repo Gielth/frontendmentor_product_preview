@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.productCard {
+    max-width: 540px;
+    display: flex;
+    flex-direction: row;
+}
+
+.productCard .product {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: space-between;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    padding: 2rem;
+}
+
+.productCard .product .productName {
+    font-family: 'Fraunces', serif;
+    font-size: 1.825rem;
+    line-height: 1.888rem;
+    font-weight: 700;
+    opacity: .85;
+}
+
+.productCard .product::before{
+    content: 'perfume ';
+    letter-spacing: 0.25rem;
+    font-size: 0.688rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    opacity: .5;
+}
+
+.productCard .product .productDescription {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.805rem;
+    line-height: 1.200rem;
+    color: #a1a1a1;
+    text-align: left;
+}
+
+.productCard .product .productPrice {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 1.850rem;
+}
+
+.productCard .product .productPrice sup {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .725rem;
+    text-decoration: line-through;
+    color: #a1a1a1;
+    font-weight: 500;
+    padding: .825rem;
+}
+
+.productCard .product .button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(30, 38%, 92%);
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: .825rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+.productCard .product .button::before {
+    content: '';
+    display: inline-block;
+    background-image: url('./images/icon-cart.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 14px;
+    width: 14px;
+    padding-right: 8px;
+    align-items: center;
+}
+
+.productCard .product .button:hover {
+    background-color: hsl(158, 36%, 13%);
+}
+
+.productCard .productImage {
+    flex: 50%;
+}
+
+.productCard .productImage img{
+    display: flex;
+    width: 100%;
+    justify-items: auto;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
